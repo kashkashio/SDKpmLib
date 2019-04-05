@@ -57,3 +57,8 @@ an error message is being thrown.*
 
 **How to get IDFA can be found [here](https://stackoverflow.com/questions/25846108/how-to-get-advertising-id-in-android-programmatically)**
 
+* Emit Event function be called like this and only after init !
+"this" is the context aka activity
+```
+SDKpm.emitEvent("eventName", "eventValue", "placeMentID", this);
+```
